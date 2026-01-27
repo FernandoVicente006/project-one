@@ -1,0 +1,60 @@
+.post-card {
+    background: #020617;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
+}
+
+.post-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.post-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    border-radius: 999px;
+    color: #020617;
+    font-weight: bold;
+}
+
+.post-tag.games {
+    background: #22d3ee;
+}
+
+.post-tag.tech {
+    background: #7c3aed;
+}
+
+.post-tag.filmes {
+    background: #f97316;
+}
+
+.post-tag.hqs {
+    background: #22c55e;
+}
+
+.post-content {
+    padding: 1rem;
+}
+
+.post-content h3 {
+    color: #e5e7eb;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.post-content p {
+    color: #9ca3af;
+    font-size: 0.85rem;
+}

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import PostCard from "./components/PostCard";
+import SideBar from "./components/SideBar";
+import posts from "./data/posts";
+import Footer from "./components/Footer";
+import "./app.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <main className="home">
+        <section className="posts">
+          {posts.map(post => (
+            <PostCard key={post.id} post={post} />
+          ))}
+        </section>
+        <SideBar />
+      </main>
+      <Footer />
+    </>
   );
 }
 
