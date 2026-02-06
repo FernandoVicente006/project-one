@@ -4,7 +4,7 @@ import PostCard from "./components/PostCard";
 import SideBar from "./components/SideBar";
 import posts from "./data/posts";
 import Footer from "./components/Footer";
-import "./app.css";
+import "./App.css";
 
 function App() {
   return (
